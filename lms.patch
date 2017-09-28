@@ -1,0 +1,23 @@
+diff -Naur lms-8.0.0-7/src/Protocol.cpp lms-8.0.0-7_moded/src/Protocol.cpp
+--- lms-8.0.0-7/src/Protocol.cpp	2011-09-27 09:55:38.000000000 +0200
++++ lms-8.0.0-7_moded/src/Protocol.cpp	2017-09-26 14:32:38.080016257 +0200
+@@ -1428,7 +1428,7 @@
+ 	char host[FQDN_MAX_SIZE + 1];
+ #define LMS_MAX_LINE_LEN 1023
+ 	char line[LMS_MAX_LINE_LEN + 1];
+-#define LMS_LINE_SIG_FIRST_WORDS(a) "# LMS GENERATED "a" "
++#define LMS_LINE_SIG_FIRST_WORDS(a) "# LMS GENERATED " a " "
+ #define LMS_LINE_SIG_LAST_WORD "LINE"
+ #define LMS_LINE_SIG_LAST_WORD_LEN 4
+ #define LMS_LINE_SIG(a) LMS_LINE_SIG_FIRST_WORDS(a) LMS_LINE_SIG_LAST_WORD
+diff -Naur lms-8.0.0-7/src/tools/ATVersion.cpp lms-8.0.0-7_moded/src/tools/ATVersion.cpp
+--- lms-8.0.0-7/src/tools/ATVersion.cpp	2011-06-29 11:45:54.000000000 +0200
++++ lms-8.0.0-7_moded/src/tools/ATVersion.cpp	2017-09-26 14:33:30.865800315 +0200
+@@ -40,6 +40,7 @@
+ #include <cerrno>
+ #include <fstream>
+ #include <dirent.h>
++#include <unistd.h>
+ 
+ #define AT_VERSION_ARGUMENT "--version"
+ #define AT_VERSION_MAXSIZE 40
