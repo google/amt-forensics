@@ -117,3 +117,7 @@ The ```getallinfo.sh``` script under the ```all_api_calls``` directory will
 attempt to gather info from all available AMT WSMAN APIs. This can be useful
 for manual searching & inspiration during forensics.
 
+## Disclaimer
+
+This is not an official Google product.
+
