@@ -28,9 +28,9 @@ AMT yourself in 10 steps.
 
 The Local Manageability Service (LMS) for Linux needs to built and started:
 
-1. Download [lms-8.0.0-7.tar.gz](https://software.intel.com/en-us/file/lms-800-7targz)
+1. Download [lms-8.0.0-7.tar.gz](https://web.archive.org/web/20150804210131/https://software.intel.com/sites/default/files/lms-8.0.0-7.tar.gz)
    and unzip it. You can read more info about LMS for Linux
-   [here](https://software.intel.com/en-us/articles/download-the-latest-intel-amt-open-source-drivers).
+   [here](https://web.archive.org/web/20180829131835/https://software.intel.com/en-us/articles/download-the-latest-intel-amt-open-source-drivers/).
 2. Copy lms.patch from this repository into the unziped directory.
 3. Carry out the following commands:
 
